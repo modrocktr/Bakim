@@ -108,7 +108,22 @@
       a.link.primary { border-color: rgba(0, 229, 199, 0.4); background: rgba(0, 229, 199, 0.1); }
       a.link svg { width: 20px; height: 20px; flex: 0 0 auto; }
       a.link .sub { margin-left: auto; font-size: 12px; font-weight: 500; color: var(--ink-3); }
-      footer { margin-top: 26px; font-size: 12px; color: var(--ink-3); }
+      .iletisim {
+        margin-top: 22px;
+        padding-top: 20px;
+        border-top: 1px solid var(--line);
+        font-size: 14px;
+        color: var(--ink-2);
+      }
+      .iletisim a {
+        color: var(--teal);
+        text-decoration: none;
+        font-weight: 600;
+        word-break: break-all;
+      }
+      .iletisim a:hover { text-decoration: underline; }
+      .iletisim .not { margin: 6px 0 0; font-size: 12px; color: var(--ink-3); }
+      footer { margin-top: 22px; font-size: 12px; color: var(--ink-3); }
       @media (max-width: 420px) {
         h1 { font-size: 24px; }
         .box { padding: 16px; }
@@ -145,6 +160,14 @@
           <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
           YouTube
         </a>
+      </div>
+
+      <!-- Site kapaliyken ulasilacak tek kanal. Sponsorluk ya da barindirma
+           teklifi gelebilecegi icin sosyal baglantilardan sonra, ama footer'dan
+           once duruyor: goze carpsin ama dilenme gibi durmasin. -->
+      <div class="iletisim">
+        İletişim: <a href="mailto:modrocktr@gmail.com">modrocktr@gmail.com</a>
+        <p class="not">Sponsorluk, iş birliği ve teknik konular için yazabilirsin.</p>
       </div>
 
       <footer>KerimMC · İçerikler orijinal yapımcılarına aittir.</footer>
